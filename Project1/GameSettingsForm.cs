@@ -49,5 +49,26 @@ namespace Project1
         {
 
         }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPlay_Click(object sender, EventArgs e)
+        {
+            var settings = new GameSettings
+            {
+                Player1Name = txtPlayer1.Text.Trim(),
+                Player2Name = (rdoVsComputer.Checked ? "Computer" : txtPlayer2.Text.Trim()),
+                VsComputer = rdoVsComputer.Checked,
+                Rows = (int)nudRows.Value,
+                Cols = (int)nudCols.Value
+            };
+
+            this.Tag = settings;
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
     }
 }

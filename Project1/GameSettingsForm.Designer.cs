@@ -36,11 +36,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.numCols = new System.Windows.Forms.NumericUpDown();
+            this.numRows = new System.Windows.Forms.NumericUpDown();
+            this.buttonPlay = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numCols)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRows)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -119,69 +119,71 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Cols:";
             // 
-            // numericUpDown1
+            // numCols
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(206, 249);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numCols.Location = new System.Drawing.Point(206, 249);
+            this.numCols.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numCols.Minimum = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(41, 25);
-            this.numericUpDown1.TabIndex = 8;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numCols.Name = "numCols";
+            this.numCols.Size = new System.Drawing.Size(41, 25);
+            this.numCols.TabIndex = 8;
+            this.numCols.Value = new decimal(new int[] {
             4,
             0,
             0,
             0});
             // 
-            // numericUpDown2
+            // numRows
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(70, 249);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numRows.Location = new System.Drawing.Point(70, 249);
+            this.numRows.Maximum = new decimal(new int[] {
             10,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numRows.Minimum = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(41, 25);
-            this.numericUpDown2.TabIndex = 9;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numRows.Name = "numRows";
+            this.numRows.Size = new System.Drawing.Size(41, 25);
+            this.numRows.TabIndex = 9;
+            this.numRows.Value = new decimal(new int[] {
             4,
             0,
             0,
             0});
+            this.numRows.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
-            // button1
+            // buttonPlay
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(47, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 42);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Start!";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonPlay.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonPlay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPlay.Location = new System.Drawing.Point(47, 296);
+            this.buttonPlay.Name = "buttonPlay";
+            this.buttonPlay.Size = new System.Drawing.Size(200, 42);
+            this.buttonPlay.TabIndex = 10;
+            this.buttonPlay.Text = "Start!";
+            this.buttonPlay.UseVisualStyleBackColor = false;
+            this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(279, 408);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.buttonPlay);
+            this.Controls.Add(this.numRows);
+            this.Controls.Add(this.numCols);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -193,8 +195,8 @@
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form2";
             this.Text = "Game Settings";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCols)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRows)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,8 +212,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown numCols;
+        private System.Windows.Forms.NumericUpDown numRows;
+        private System.Windows.Forms.Button buttonPlay;
     }
 }
