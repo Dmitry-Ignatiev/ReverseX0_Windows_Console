@@ -1,0 +1,8 @@
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\Project1.csproj.AssemblyReference.cache
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\GameForm.GameForm.resources
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\GameForm.GameSettingsForm.resources
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\Project1.Properties.Resources.resources
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\SomeClass.TextBoxProgram.resources
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\Project1.csproj.GenerateResource.cache
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
+C:\Users\dima1\Desktop\c#\Lesson WindowForms\Project1\obj\Debug\GameForm.GameSettings.resources
