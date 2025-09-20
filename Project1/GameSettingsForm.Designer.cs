@@ -1,6 +1,6 @@
-﻿namespace Project1
+﻿namespace GameForm
 {
-    partial class Form2
+    partial class GameSettingsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -89,6 +89,7 @@
             this.textBoxPlayer2.Size = new System.Drawing.Size(92, 25);
             this.textBoxPlayer2.TabIndex = 4;
             this.textBoxPlayer2.Text = "[Computer]";
+            this.textBoxPlayer2.TextChanged += new System.EventHandler(this.textBoxPlayer2_TextChanged);
             // 
             // label3
             // 
@@ -140,6 +141,7 @@
             0,
             0,
             0});
+            this.numCols.ValueChanged += new System.EventHandler(this.numCols_ValueChanged);
             // 
             // numRows
             // 
@@ -176,7 +178,7 @@
             this.buttonPlay.UseVisualStyleBackColor = false;
             this.buttonPlay.Click += new System.EventHandler(this.buttonPlay_Click);
             // 
-            // Form2
+            // GameSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,8 +195,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "Form2";
+            this.Name = "GameSettingsForm";
             this.Text = "Game Settings";
+            this.Load += new System.EventHandler(this.GameSettingsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numCols)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRows)).EndInit();
             this.ResumeLayout(false);

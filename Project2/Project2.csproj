@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A8959421-C145-4D52-AAFD-CAD2B85523D1}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Project1</RootNamespace>
-    <AssemblyName>Project1</AssemblyName>
+    <ProjectGuid>{E8543DD6-C6B4-4B26-97EC-692411F28144}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Project2</RootNamespace>
+    <AssemblyName>Project2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,52 +32,31 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>FormsBuilder.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameForm.cs">
+    <Compile Include="Button.cs" />
+    <Compile Include="FormPink.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameForm.Designer.cs">
-      <DependentUpon>GameForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GameSettingsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GameSettingsForm.Designer.cs">
-      <DependentUpon>GameSettingsForm.cs</DependentUpon>
+    <Compile Include="FormPink.Designer.cs">
+      <DependentUpon>FormPink.cs</DependentUpon>
     </Compile>
     <Compile Include="program.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="SomeClass.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="TextBox.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="GameForm.resx">
-      <DependentUpon>GameForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormPink.resx">
+      <DependentUpon>FormPink.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameSettingsForm.resx">
-      <DependentUpon>GameSettingsForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="SomeClass.resx">
+      <DependentUpon>SomeClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TextBox.resx">
       <DependentUpon>TextBox.cs</DependentUpon>
